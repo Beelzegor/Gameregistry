@@ -12,7 +12,6 @@ namespace Gameregistry
 
             builder.Services.AddDbContext<VideogamedbContext>(options =>
                 options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.")));
-
             var app = builder.Build();
 
             if (!app.Environment.IsDevelopment())
