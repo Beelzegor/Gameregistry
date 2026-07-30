@@ -20,7 +20,7 @@ namespace Gameregistry.Models
         public string Genre { get; set; }
 
         [Required]
-        public DateTime ReleaseYear { get; set; }
+        public int ReleaseYear { get; set; }
 
     }
 }
