@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Gameregistry.Models;
 
-
     public class VideogamedbContext : DbContext
     {
         
