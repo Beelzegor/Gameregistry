@@ -25,6 +25,12 @@
             @Html.DisplayFor(model => model.Videogames.Description)
         </dd>
         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Videogames.Publisher)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Videogames.Publisher)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Videogames.Genre)
         </dt>
         <dd class="col-sm-10">
@@ -37,6 +43,7 @@
             @Html.DisplayFor(model => model.Videogames.ReleaseYear)
         </dd>
     </dl>
+    
     <form method="post">
         <input type="hidden" asp-for="Videogames.Id" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |

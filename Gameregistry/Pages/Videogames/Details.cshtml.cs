@@ -20,6 +20,7 @@ namespace Gameregistry.Pages.Videogames
         }
 
         public Gameregistry.Models.Videogames Videogames { get; set; } = default!;
+
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)

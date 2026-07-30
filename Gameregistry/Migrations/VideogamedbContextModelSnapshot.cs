@@ -37,6 +37,11 @@ namespace Gameregistry.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Publisher")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("ReleaseYear")
                         .HasColumnType("INTEGER");
 

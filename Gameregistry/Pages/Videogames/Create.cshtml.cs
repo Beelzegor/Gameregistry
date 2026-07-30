@@ -27,6 +27,7 @@ namespace Gameregistry.Pages.Videogames
         [BindProperty]
         public Gameregistry.Models.Videogames Videogames { get; set; } = default!;
 
+        // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

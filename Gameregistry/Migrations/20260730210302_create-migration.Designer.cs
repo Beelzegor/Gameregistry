@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Gameregistry.Migrations
 {
     [DbContext(typeof(VideogamedbContext))]
-    [Migration("20260730000659_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260730210302_create-migration")]
+    partial class createmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,11 @@ namespace Gameregistry.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Publisher")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");

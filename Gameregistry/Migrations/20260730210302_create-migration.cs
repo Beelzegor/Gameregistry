@@ -5,7 +5,7 @@
 namespace Gameregistry.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class createmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,6 +18,7 @@ namespace Gameregistry.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     Description = table.Column<string>(type: "TEXT", maxLength: 250, nullable: false),
+                    Publisher = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     Genre = table.Column<string>(type: "TEXT", maxLength: 20, nullable: false),
                     ReleaseYear = table.Column<int>(type: "INTEGER", nullable: false)
                 },

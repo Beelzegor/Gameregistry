@@ -24,6 +24,12 @@
             @Html.DisplayFor(model => model.Videogames.Description)
         </dd>
         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Videogames.Publisher)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Videogames.Publisher)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Videogames.Genre)
         </dt>
         <dd class="col-sm-10">
@@ -37,7 +43,6 @@
         </dd>
     </dl>
 </div>
-
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Videogames.Id">Edit</a> |
     <a asp-page="./Index">Back to List</a>

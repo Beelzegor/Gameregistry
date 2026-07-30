@@ -27,6 +27,12 @@
             </div>
             <div class="form-group">
                 <span class="text-danger">*</span>
+                <label asp-for="Videogames.Publisher" class="control-label"></label>
+                <input asp-for="Videogames.Publisher" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Videogames.Publisher" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
                 <label asp-for="Videogames.Genre" class="control-label"></label>
                 <input asp-for="Videogames.Genre" class="form-control" aria-required="true"/>
                 <span asp-validation-for="Videogames.Genre" class="text-danger"></span>
@@ -43,6 +49,7 @@
         </form>
     </div>
 </div>
+
 <div>
     <a asp-page="Index">Back to List</a>
 </div>

@@ -18,6 +18,7 @@ namespace Gameregistry.Pages.Videogames
         {
             _context = context;
         }
+
         public IList<Gameregistry.Models.Videogames> Videogames { get;set; } = default!;
 
         public async Task OnGetAsync()

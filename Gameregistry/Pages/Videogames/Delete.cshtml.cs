@@ -40,6 +40,7 @@ namespace Gameregistry.Pages.Videogames
 
             return NotFound();
         }
+
         public async Task<IActionResult> OnPostAsync(int? id)
         {
             if (id == null)
